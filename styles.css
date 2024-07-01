@@ -29,7 +29,6 @@ header{
     top: 0;
     z-index: 1;
     background-color: var(--background-color);
-    color: var(--headline-color);
 }
 
 main{
