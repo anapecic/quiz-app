@@ -1,6 +1,21 @@
+:root{
+    --primarycolor: #3e80d0;
+    --secondarycolor: #8fb7e8;
+    --textcolor: #030a12;
+    --background-color: #f0f5fb;
+    --headline-color: #081019;
+    --accentcolor: #5394e2;
+}
+
 *{
     margin: 0;
     box-sizing: border-box;
+    color: var(--textcolor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--background-color);
 }
 
 header{
@@ -8,23 +23,113 @@ header{
     justify-content: center;
     align-items: center;
     height: 4rem;
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 0 0 8px var(--accentcolor);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1;
-    background-color: white;
+    background-color: var(--background-color);
+    color: var(--headline-color);
 }
 
 main{
-    margin-top: 100px;
+    padding-top: 100px;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
 }
 
 .quiz-card{
+    grid-column-start: 2;
+    background-color: var(--secondarycolor);
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    box-shadow: 4px 4px var(--accentcolor);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.btn{
+    background-color: var(--background-color);
+    font-size: 18px;
+    margin-top: 1rem;
+    border: 2px solid var(--accentcolor);
+    padding: 3px 4px;
+    border-radius: 5px
+}
+
+.categories{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.category{
+    background-color: var(--accentcolor);
+    border-radius: 5px;
+    padding: 2px 2px;
+    font-size: 12px;
+    color: var(--background-color);
+}
+
+.bookmark-card{
+    position: absolute;
+    top: -11px;
+    right: 9px;
+    border-top: 19px solid var(--headline-color);
+    border-left: 12px solid var(--headline-color);
+    border-right: 12px solid var(--headline-color);
+    border-bottom: 12px solid var(--secondarycolor);
+    border-radius: 5px;
+}
+
+.top-bookmark{
+    position: absolute;
+    top: -8px;
+    right: 12.5px;
+    border-top: 13px solid var(--secondarycolor);
+    border-left: 9px solid var(--secondarycolor);
+    border-right: 9px solid var(--secondarycolor);
+    border-bottom: 9px solid transparent;
+    border-radius: 3px;
+}
+
+.question{
+    font-weight: normal;
 }
 
 img{
     width: 30px;
 }
 
+footer{
+    display: flex;
+    justify-content: space-around;
+    height: 4.5rem;
+    box-shadow: 0 0 8px var(--accentcolor);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 5px;
+    background-color: var(--background-color);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px 15px;
+    margin: 5px 5px;
+}
+
+.clickedHome{
+    background-color: var(--primarycolor);
+}
