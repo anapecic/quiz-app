@@ -129,6 +129,10 @@ footer{
     margin: 5px 5px;
 }
 
-.clickedHome{
+.clicked{
     background-color: var(--primarycolor);
+}
+
+.hidden{
+    display: none;
 }
