@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -12,12 +13,13 @@
     </header>
     <main id="home">
         <section class="quiz-card">
-            <div class="bookmark-card"></div>
-            <div class="top-bookmark hidden"></div>
+            <div class="bookmark-card" data-js="bookmarkBottom1"></div>
+            <div class="top-bookmark"  data-js="bookmarkTop1"></div>
             <h2 class="question">
                 What property flips the axes in flexbox?
             </h2>
-            <input type="submit" class="btn" value="Show Answer">
+            <p data-js="antwort-1" class="answer hidden">flex-direction</p>
+            <input type="submit" class="btn" data-js="btn1" value="Show Answer">
             <div class="categories">
                 <p class="html category">#html</p>
                 <p class="flexbox category">#flexbox</p>
@@ -25,12 +27,13 @@
             </div>
         </section>
         <section class="quiz-card">
-            <div class="bookmark-card"></div>
-            <div class="top-bookmark"></div>
+            <div class="bookmark-card" data-js="bookmarkBottom2"></div>
+            <div class="top-bookmark"  data-js="bookmarkTop2"></div>
             <h2 class="question">
                 What property aligns your text?
             </h2>
-            <input type="submit" class="btn" value="Show Answer">
+            <p data-js="antwort-2" class="answer hidden">text-align</p>
+            <input type="submit" class="btn" data-js="btn2" value="Show Answer">
             <div class="categories">
                 <p class="html category">#html</p>
                 <p class="flexbox category">#flexbox</p>
@@ -50,4 +53,4 @@
         </footer>
     </main>
 </body>
-</html>
+</html> 
