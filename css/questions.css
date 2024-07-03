@@ -1,0 +1,39 @@
+.quiz-card{
+    grid-column-start: 2;
+    background-color: var(--secondarycolor);
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    box-shadow: 4px 4px var(--accentcolor);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background-color: var(--background-color);
+    font-size: 18px;
+    margin-top: 1rem;
+    border: 2px solid var(--accentcolor);
+    padding: 3px 4px;
+    border-radius: 5px
+}
+
+.categories{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.category{
+    background-color: var(--accentcolor);
+    border-radius: 5px;
+    padding: 2px 2px;
+    font-size: 12px;
+    color: var(--background-color);
+}
+
+.question{
+    font-weight: normal;
+}

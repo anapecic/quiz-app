@@ -1,0 +1,23 @@
+
+.bookmark-card{
+    position: absolute;
+    top: -11px;
+    right: 9px;
+    border-top: 19px solid var(--headline-color);
+    border-left: 12px solid var(--headline-color);
+    border-right: 12px solid var(--headline-color);
+    border-bottom: 12px solid var(--secondarycolor);
+    border-radius: 5px;
+}
+
+.top-bookmark{
+    position: absolute;
+    top: -8px;
+    right: 12.5px;
+    border-top: 13px solid var(--secondarycolor);
+    border-left: 9px solid var(--secondarycolor);
+    border-right: 9px solid var(--secondarycolor);
+    border-bottom: 9px solid transparent;
+    border-radius: 3px;
+}
+
