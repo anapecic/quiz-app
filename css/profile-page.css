@@ -139,3 +139,7 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+  /* .dark{
+    background-color: var(--primarycolor);
+  } */
