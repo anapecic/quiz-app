@@ -1,5 +1,5 @@
 //Question Buttons
-
+//Button 1
 const answerButton1 = document.querySelector("[data-js='btn1']");
 const correctAnswer1 = document.querySelector("[data-js='antwort-1']");
 
@@ -13,6 +13,7 @@ correctAnswer1.addEventListener("click", () => {
   correctAnswer1.classList.add("hidden");
 });
 
+//Button 2
 const answerButton2 = document.querySelector("[data-js='btn2']");
 const correctAnswer2 = document.querySelector("[data-js='antwort-2']");
 
@@ -27,6 +28,7 @@ correctAnswer2.addEventListener("click", () => {
 });
 
 //Bookmark Button
+//Button 1
 const bookmarkBottom1 = document.querySelector('[data-js="bookmarkBottom1"]');
 const bookmarkTop1 = document.querySelector('[data-js="bookmarkTop1"]');
 const card1 = document.querySelector('[data-js="card1"]');
@@ -39,6 +41,7 @@ bookmarkBottom1.addEventListener("click", () => {
   bookmarkTop1.classList.remove("hidden");
 });
 
+//Button 2
 const bookmarkBottom2 = document.querySelector('[data-js="bookmarkBottom2"]');
 const bookmarkTop2 = document.querySelector('[data-js="bookmarkTop2"]');
 const card2 = document.querySelector('[data-js="card2"]');
