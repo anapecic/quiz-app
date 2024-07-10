@@ -68,11 +68,26 @@ function loadDarkMode() {
 document.addEventListener("DOMContentLoaded", loadDarkMode);
 
 // BOOKMARKS
+// setting local
+
+// storing status in local storage
 bookmarkTop1.addEventListener("click", () => {
-  console.log("bookmarked");
   localStorage.setItem("bookmarked1", "true");
 });
 
 bookmarkBottom1.addEventListener("click", () => {
-  console.log("notBookmarked");
+  localStorage.setItem("bookmarked1", "false");
 });
+
+// loading status from local storage
+
+function loadBookmarkStatus() {
+  const bookmarkedStorage = localStorage.getItem("bookmarked1");
+  if (bookmarkedStorage === "true") {
+    bookmarkTop1.classList.add("hidden");
+  } else {
+    bookmarkTop1.classList.remove("hidden");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", loadBookmarkStatus);

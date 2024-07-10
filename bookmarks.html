@@ -12,26 +12,28 @@
         <h1>Quiz App</h1>
     </header>
     <main id="bookmark-page">
-        <section class="quiz-card" data-js="question1">
-            <div class="bookmark-card"></div>
-            <div class="top-bookmark hidden"></div>
+        <section class="quiz-card" data-js="card1">
+            <div class="bookmark-card" data-js="bookmarkBottom1"></div>
+            <div class="top-bookmark hidden"  data-js="bookmarkTop1"></div>
             <h2 class="question">
                 What property flips the axes in flexbox?
             </h2>
-            <input type="submit" class="btn" value="Show Answer">
+            <p data-js="antwort-1" class="answer hidden">flex-direction</p>
+            <input type="submit" class="btn" data-js="btn1" value="Show Answer">
             <div class="categories">
                 <p class="html category">#html</p>
                 <p class="flexbox category">#flexbox</p>
                 <p class="css category">#css</p>
             </div>
         </section>
-        <section class="quiz-card hidden" data-js="question2">
-            <div class="bookmark-card"></div>
-            <div class="top-bookmark hidden"></div>
+        <section class="quiz-card hidden" data-js="card2">
+            <div class="bookmark-card" data-js="bookmarkBottom2"></div>
+            <div class="top-bookmark"  data-js="bookmarkTop2"></div>
             <h2 class="question">
-                What property flips the axes in flexbox?
+                What property aligns your text?
             </h2>
-            <input type="submit" class="btn" value="Show Answer">
+            <p data-js="antwort-2" class="answer hidden">text-align</p>
+            <input type="submit" class="btn" data-js="btn2" value="Show Answer">
             <div class="categories">
                 <p class="html category">#html</p>
                 <p class="flexbox category">#flexbox</p>
