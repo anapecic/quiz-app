@@ -17,7 +17,13 @@
     margin-top: 1rem;
     border: 2px solid var(--accentcolor);
     padding: 3px 4px;
-    border-radius: 5px
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover, .answer:hover{
+    cursor: pointer;
+    background-color: var(--accentcolor);
 }
 
 .categories{
@@ -30,7 +36,7 @@
     background-color: var(--accentcolor);
     border-radius: 5px;
     padding: 2px 2px;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--background-color);
 }
 

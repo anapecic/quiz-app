@@ -29,11 +29,17 @@ footer{
 
 .menu{
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 50%;
     padding: 5px 15px;
-    margin: 5px 5px;
+    margin: 5px;
+    margin-bottom: 8px;
+}
+
+.menu:hover{
+    padding: 5px 15px;
+    background-color: var(--secondarycolor);
+    cursor: pointer;
 }
 
 img{
