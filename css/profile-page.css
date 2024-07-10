@@ -140,6 +140,12 @@
     border-radius: 50%;
   }
 
-  /* .dark{
-    background-color: var(--primarycolor);
-  } */   
+  .dark{
+    --primarycolor: #cfdef5;
+    --secondarycolor: #121212;
+    --textcolor: #cfdef5;
+    --background-color: #282828;
+    --headline-color: #3e80d0;
+    --accentcolor: #3e80d0;
+  }
+
