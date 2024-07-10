@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script src="script-index.js" defer></script>
 </head>
-<body class="body dark">
-    <header>
+<body data-js="body-index">
+    <header class="dark-shadow">
         <h1>Quiz App</h1>
     </header>
-    <main id="home">
-        <section class="quiz-card">
+    <main id="home" class="">
+        <section class="quiz-card" data-js="card1">
             <div class="bookmark-card" data-js="bookmarkBottom1"></div>
             <div class="top-bookmark"  data-js="bookmarkTop1"></div>
             <h2 class="question">
@@ -26,7 +26,7 @@
                 <p class="css category">#css</p>
             </div>
         </section>
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="card2">
             <div class="bookmark-card" data-js="bookmarkBottom2"></div>
             <div class="top-bookmark"  data-js="bookmarkTop2"></div>
             <h2 class="question">
@@ -40,7 +40,7 @@
                 <p class="css category">#css</p>
             </div>
         </section>
-        <footer>
+        <footer class="dark-shadow">
             <div class="menu clicked">
                 <a href="index.html"><img src="assets/home.svg"></a>
             </div>
