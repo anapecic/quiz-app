@@ -44,3 +44,9 @@
     font-weight: normal;
 }
 
+.new-questions{
+    grid-column-start: 2;
+    padding: 2rem;
+    border: 3px solid var(--accentcolor);
+    border-radius: 15px;
+}

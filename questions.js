@@ -13,6 +13,22 @@ const categoryInput = document.querySelector('[data-js="category-input"]');
 const submitButton = document.querySelector('[data-js="btn-create-question"]');
 const questionForm = document.querySelector('[data-js="create-questions"]');
 const mainAppend = document.querySelector("main");
+const amountCharactersQuestion = document.querySelector(
+  '[data-js="amountCharactersQuestion"]'
+);
+const amountCharactersAnswer = document.querySelector(
+  '[data-js="amountCharactersAnswer"]'
+);
+
+// show amount of characters left
+//question
+questionInput.addEventListener("input", (event) => {
+  amountCharactersQuestion.textContent = 150 - questionInput.value.length;
+});
+//answer
+answerInput.addEventListener("input", (event) => {
+  amountCharactersAnswer.textContent = 50 - answerInput.value.length;
+});
 
 // submit button
 questionForm.addEventListener("submit", (event) => {
@@ -102,5 +118,10 @@ function loadQuestionFromLocalStorage() {
   const displayQuestionCardsProfile = document.querySelector(
     '[data-js="questions-card"]'
   );
-  displayQuestionCardsProfile;
+  displayQuestionCardsProfile.insertAdjacentHTML(
+    "beforeend",
+    retrievedNewQuestion
+  );
 }
+
+localStorage.getItem("newQuestion") && loadQuestionFromLocalStorage();
