@@ -63,3 +63,19 @@ function createTag(questionElement, tagVariable, tagContent) {
   );
   categoryParentContainer.append(tagVariable);
 }
+
+//interactivity with new questions
+
+const answerButton1 = document.querySelector("[data-js='btn1']");
+const correctAnswer1 = document.querySelector("[data-js='antwort-1']");
+console.log(answerButton1);
+
+answerButton1.addEventListener("click", () => {
+  answerButton1.classList.add("hidden");
+  correctAnswer1.classList.remove("hidden");
+});
+
+correctAnswer1.addEventListener("click", () => {
+  answerButton1.classList.remove("hidden");
+  correctAnswer1.classList.add("hidden");
+});
