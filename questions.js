@@ -19,6 +19,9 @@ const amountCharactersQuestion = document.querySelector(
 const amountCharactersAnswer = document.querySelector(
   '[data-js="amountCharactersAnswer"]'
 );
+const displayQuestionCardsProfile = document.querySelector(
+  '[data-js="questions-card"]'
+);
 
 // show amount of characters left
 //question
@@ -60,7 +63,8 @@ questionForm.addEventListener("submit", (event) => {
   const createdIndividualTag =
     individualTag.checked === true && document.createElement("p");
   //erstelltes element wird an main appended
-  mainAppend.append(newQuestion);
+  displayQuestionCardsProfile.append(newQuestion);
+  event.target.reset();
 
   //logical operators ensure that function is only called if the checkmark was checked
   createdHtmlTag && createTag(newQuestion, createdHtmlTag, "#html");
@@ -115,9 +119,6 @@ function createTag(questionElement, tagVariable, tagContent) {
 
 function loadQuestionFromLocalStorage() {
   const retrievedNewQuestion = localStorage.getItem("newQuestion");
-  const displayQuestionCardsProfile = document.querySelector(
-    '[data-js="questions-card"]'
-  );
   displayQuestionCardsProfile.insertAdjacentHTML(
     "beforeend",
     retrievedNewQuestion
