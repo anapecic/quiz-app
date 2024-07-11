@@ -1,3 +1,7 @@
+#main-questions{
+    margin-bottom: 150px;
+}
+
 .form{
     grid-column-start: 2;
     display: flex;
@@ -21,17 +25,15 @@
     border: 2px solid var(--accentcolor);
 }
 
-.form-section p{
-    font-size: 1rem;
-}
-
 .form-section label{
     font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-.form-section1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.characters-left{
+    font-size: 12px;
+    margin-bottom: 5px;
 }
 
 .fieldset-name{
@@ -86,4 +88,12 @@ li{
 
 .desc-category{
     margin-bottom: 7px;
+}
+
+#question-card{
+    grid-column-start: 2;
+    margin: 2rem;
+    padding: 2rem;
+    border: 3px solid var(--accentcolor);
+    border-radius: 15px;
 }

@@ -94,3 +94,17 @@ function loadBookmarkStatus() {
 }
 
 document.addEventListener("DOMContentLoaded", loadBookmarkStatus);
+
+//retrieve questions from questions page / local storage and display here
+function loadQuestionFromLocalStorage() {
+  const retrievedNewQuestion = localStorage.getItem("newQuestion");
+  const displayQuestionCardsProfile = document.querySelector(
+    '[data-js="new-questions"]'
+  );
+  displayQuestionCardsProfile.insertAdjacentHTML(
+    "beforeend",
+    retrievedNewQuestion
+  );
+}
+
+localStorage.getItem("newQuestion") && loadQuestionFromLocalStorage();

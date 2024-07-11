@@ -11,15 +11,17 @@
     <header class="dark-shadow">
         <h1>Quiz App</h1>
     </header>
-    <main>
+    <main id="main-questions">
         <section class="form">
             <form id="create-questions" data-js="create-questions" class="form">
                 <fieldset class="form-section form-section1">
                     <legend class="fieldset-name">Create your own question-card:</legend>
                     <label for="question-text">Question</label>
                     <input type="text" data-js="question-text" name="questionTextInput" id="question-text" placeholder="your question">
+                    <p class="characters-left"><span data-js="amountCharactersQuestion">150</span> characters left.</p>
                     <label for="answer-text">Answer</label>
                     <input type="text" data-js="answer-text" name="answerTextInput" id="answer-text" placeholder="correct answer">
+                    <p class="characters-left"><span data-js="amountCharactersAnswer">50</span> characters left.</p>
                 </fieldset>
                 <fieldset class="form-section">
                     <legend class="fieldset-name">Add a category:</legend>
@@ -49,23 +51,24 @@
                 <input type="submit" data-js="btn-create-question" class="btn-submit" value="Create question"></input>
             </form>
         </section>
-        <section id="question-card" data-js="questions-card">
+        <section id="question-card" data-js="questions-card" class="question-card">
+            <p>Your own questions:</p>
 <!-- hier kommt die anzeige der fragekarten - dafür nutzung der gleichen klassen wie im index.html bei den karten -->
         </section>
-        <footer class="dark-shadow">
-            <div class="menu">
-                <a href="index.html"><img src="assets/home.svg"></a>
-            </div>
-            <div class="menu">
-                <a href="bookmarks.html"><img src="assets/bookmark.svg"></a>
-            </div>
-            <div class="menu clicked">
-                <a href="questions.html"><img src="assets/square-plus.svg"></a>
-            </div>
-            <div class="menu">
-                <a href="profile.html"><img src="assets/user.svg"></a>
-            </div>
-        </footer>
     </main>
+    <footer class="dark-shadow">
+        <div class="menu">
+            <a href="index.html"><img src="assets/home.svg"></a>
+        </div>
+        <div class="menu">
+            <a href="bookmarks.html"><img src="assets/bookmark.svg"></a>
+        </div>
+        <div class="menu clicked">
+            <a href="questions.html"><img src="assets/square-plus.svg"></a>
+        </div>
+        <div class="menu">
+            <a href="profile.html"><img src="assets/user.svg"></a>
+        </div>
+    </footer>
 </body>
 </html> 
