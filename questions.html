@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="questions.js" defer></script>
+</head>
+<body data-js="body-index">
+    <header class="dark-shadow">
+        <h1>Quiz App</h1>
+    </header>
+    <main>
+        <section class="form">
+            <form id="create-questions" data-js="create-questions" class="form">
+                <fieldset class="form-section form-section1">
+                    <legend class="fieldset-name">Create your own question-card:</legend>
+                    <label for="question-text">Question</label>
+                    <input type="text" data-js="question-text" name="questionTextInput" id="question-text" placeholder="your question">
+                    <label for="answer-text">Answer</label>
+                    <input type="text" data-js="answer-text" name="answerTextInput" id="answer-text" placeholder="correct answer">
+                </fieldset>
+                <fieldset class="form-section">
+                    <legend class="fieldset-name">Add a category:</legend>
+                    <p class="desc-category">Add multiple categories to your question cards.</p>
+                    <li class="line">    
+                        <input type="checkbox" id="html-tag" name="htmlTagName" data-js="html-tag" checked>
+                        <label for="html-tag" class="category">#html</label>
+                    </li>
+                    <li class="line"> 
+                        <input type="checkbox" id="css-tag" name="cssTag" data-js="css-tag">
+                        <label for="css-tag" class="category">#css</label>
+                    </li>
+                    <li class="line"> 
+                        <input type="checkbox" id="flex-tag" name="flexTag" data-js="flex-tag">
+                        <label for="flex-tag" class="category">#flexbox</label>
+                    </li>
+                    <li class="line"> 
+                        <input type="checkbox" id="js-tag" name="jsTag" data-js="js-tag">
+                        <label for="js-tag" class="category">#javascript</label>
+                    </li>
+                    <li class="line"> 
+                        <input type="checkbox" id="individual-tag" name="individualTag" data-js="individual-tag">
+                        <label for="individual-tag" class="">Make your own!</label>
+                        <input type="text" id="category-input" name="categoryInput" data-js="category-input" placeholder="your category here">
+                    </li>
+                </fieldset>
+                <input type="submit" data-js="btn-create-question" class="btn-submit" value="Create question"></input>
+            </form>
+        </section>
+        <section id="question-card" data-js="questions-card">
+<!-- hier kommt die anzeige der fragekarten - dafür nutzung der gleichen klassen wie im index.html bei den karten -->
+        </section>
+        <footer class="dark-shadow">
+            <div class="menu">
+                <a href="index.html"><img src="assets/home.svg"></a>
+            </div>
+            <div class="menu">
+                <a href="bookmarks.html"><img src="assets/bookmark.svg"></a>
+            </div>
+            <div class="menu clicked">
+                <a href="questions.html"><img src="assets/square-plus.svg"></a>
+            </div>
+            <div class="menu">
+                <a href="profile.html"><img src="assets/user.svg"></a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html> 

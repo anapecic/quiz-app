@@ -1,8 +1,9 @@
 @import url(css/profile-page.css);
 @import url(css/bookmarks.css);
-@import url(css/questions.css);
+@import url(css/question-card.css);
 @import url(css/header-footer.css);
 @import url(css/media-query.css);
+@import url(css/question-page.css);
 
 :root{
     --primarycolor: #3e80d0;
